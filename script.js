@@ -15,6 +15,10 @@ let  contact;
 let frontEnd;
 /** @type {HTMLElement} */
 let portfolio;
+/** burgerMenu @type {HTMLElement} */
+let navMenu;
+/** @type {HTMLElement} */
+let myLinks;
 /** start of the program */
 function main(){
  Hello = document.getElementById('Hello');
@@ -25,6 +29,8 @@ function main(){
  contact = document.getElementById('myContact');
  frontEnd = document.getElementById('frontEnd');
  portfolio = document.getElementById('portfolio');
+ navMenu = document.getElementById('navMenu');
+ myLinks = document.getElementById('myLinks');
 }
 /** hide Hello And show About me */
 function hideHello () {
@@ -61,7 +67,17 @@ function showName(){
     frontEnd.style.display = 'none'
     portfolio.style.display = 'block'
 }
+/** show frontEnd again */
 function devoloper (){
     frontEnd.style.display = 'block'
     portfolio.style.display = 'none'
 }
+/** dropMenu */
+function menuDown (){
+    if (navMenu.style.display === "block"){
+        navMenu.style.display = "none";
+    } else {
+        myLinks.style.display = "block";
+    }
+}
+

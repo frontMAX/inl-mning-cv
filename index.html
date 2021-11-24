@@ -8,14 +8,33 @@
     <link rel="stylesheet" href="./style.css">
     <script defer src="./script.js"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
-   <!-- first side --> 
-    <div class=" flex bg-gradient-to-r from-black via-grey-900 to-yellow-900 w-full h-screen  ">
-           <img src="./meMySelfAndI2.jpg" alt="" class="h-92 flex justify-end  mix-blend-lighten">
+     <!-- mobile burgermeny-->
+    <div id="navMenu" class="lg:hidden">
+        <span onclick="menuDown()" class=" material-icons md-24">menu</span>
+    </div>
+    <div id="myLinks" class=" hidden h-screen w-full bg-green-300">
+        <nav>
+            <ul>
+                <li><a href="#moreOfMe">About me</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#showPortfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- img and background--> 
+    <div id="Home" class=" flex bg-gradient-to-r from-black via-grey-600 to-yellow-900 w-full h-screen  ">
+        <img src="./meMySelfAndI2.jpg" alt="" class="h-92 flex justify-end  mix-blend-lighten">
+       
+        <!-- hover: changes to About me and send you down the side -->
         <div class="mt-20">  
-            <!-- hover: changes to About me and send you down the side -->
             <h1 id="Hello" onmouseover="hideHello()" onmouseout="showeHello()" class="text-8xl font-black text-white p-10"> Hello </h1>
             <h1 id="aboutMe" onmouseover="showAboutMe()"  class="hidden text-8xl font-black text-white p-10"> <a href="#moreOfMe"> About me</a></h1>
             
@@ -27,27 +46,53 @@
            <h2 id="myContact" onmouseover="showeContact()" class=" hidden text-7xl font-bold text-red-800 mt-7"> <a href="#contact">Contact</a> </h2>
 
            <h2 id="frontEnd" onmouseover="FontEnd()" onmouseout="devoloper()" class="text-4xl font-mono mt-5 text-red-800"> Front End Devoloper</h2>
-           <h2 id="portfolio" onmouseover="showePortfolio()" class=" hidden text-4xl font-mono mt-5 text-red-800"> Portfolio</h2>
+           <h2 id="portfolio" onmouseover="showePortfolio()" class="  hidden text-4xl font-mono mt-5 text-red-800"><a href="#showPortfolio">Portfolio</a></h2>
            
         </div> 
     </div>
-    <div class="bg-blue-400" id="moreOfMe">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi quisquam, earum tenetur nihil facilis ex maiores quasi fugiat cumque esse optio necessitatibus! Aliquid dicta ut blanditiis quaerat non voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi quisquam, earum tenetur nihil facilis ex maiores quasi fugiat cumque esse optio necessitatibus! Aliquid dicta ut blanditiis quaerat non voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi quisquam, earum tenetur nihil facilis ex maiores quasi fugiat cumque esse optio necessitatibus! Aliquid dicta ut blanditiis quaerat non voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi quisquam, earum tenetur nihil facilis ex maiores quasi fugiat cumque esse optio necessitatibus! Aliquid dicta ut blanditiis quaerat non voluptatibus.</p>
+    <!-- the page white information about me-->
+    <div class="flex h-screen w-full bg-black" id="moreOfMe">
+        <div class="flex flex-column">
+        <h2 class="text-white text-7xl ">Jag studerar <br> front end <br> utveckling</h2>
+        <p class="text-white text-2xl"> Hej, jag är Max och är född 1995 i Karlskoga. Bor sedan 2016 i Göteborg,med min sambo.
+             Jag är en social person som gillar att utmanas och utvecklas, inom kodning, mina aktiviteter
+            ,socialt och livet.  
+            Aktiviter som står högts upp är skidåkning,vågsurfing och resor runt om kring jorden.
+        
+            <div class="flex justify-end h-40 w-40 bg-white rounded-full bg-gradient-to-r from-blue-900 via-blue-500 to-blue-200  "></div>
+        </div>
+
+    .
+            
+        </p>    
     </div>
-<div id="Experience">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
+<div class="bg-yellow-500 h-screen w-full" id="Experience">
+
 </div>
 
-<div id="contact">
+<div class="bg-red-400" id="contact">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis excepturi quam iusto deleniti illum earum, unde velit perspiciatis et qui fugiat nam iste dolores officiis delectus! Eveniet, provident repellendus!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis excepturi quam iusto deleniti illum earum, unde velit perspiciatis et qui fugiat nam iste dolores officiis delectus! Eveniet, provident repellendus!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis excepturi quam iusto deleniti illum earum, unde velit perspiciatis et qui fugiat nam iste dolores officiis delectus! Eveniet, provident repellendus!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis excepturi quam iusto deleniti illum earum, unde velit perspiciatis et qui fugiat nam iste dolores officiis delectus! Eveniet, provident repellendus!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis excepturi quam iusto deleniti illum earum, unde velit perspiciatis et qui fugiat nam iste dolores officiis delectus! Eveniet, provident repellendus!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis excepturi quam iusto deleniti illum earum, unde velit perspiciatis et qui fugiat nam iste dolores officiis delectus! Eveniet, provident repellendus!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis excepturi quam iusto deleniti illum earum, unde velit perspiciatis et qui fugiat nam iste dolores officiis delectus! Eveniet, provident repellendus!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis excepturi quam iusto deleniti illum earum, unde velit perspiciatis et qui fugiat nam iste dolores officiis delectus! Eveniet, provident repellendus!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis excepturi quam iusto deleniti illum earum, unde velit perspiciatis et qui fugiat nam iste dolores officiis delectus! Eveniet, provident repellendus!</p>
+</div>
 
+<div id="showPortfolio" class="bg-green-300">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis maiores perspiciatis, expedita dolore velit aspernatur quam dignissimos obcaecati. Iure deleniti corporis impedit alias beatae error nemo, tempore exercitationem voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis maiores perspiciatis, expedita dolore velit aspernatur quam dignissimos obcaecati. Iure deleniti corporis impedit alias beatae error nemo, tempore exercitationem voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis maiores perspiciatis, expedita dolore velit aspernatur quam dignissimos obcaecati. Iure deleniti corporis impedit alias beatae error nemo, tempore exercitationem voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis maiores perspiciatis, expedita dolore velit aspernatur quam dignissimos obcaecati. Iure deleniti corporis impedit alias beatae error nemo, tempore exercitationem voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis maiores perspiciatis, expedita dolore velit aspernatur quam dignissimos obcaecati. Iure deleniti corporis impedit alias beatae error nemo, tempore exercitationem voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis maiores perspiciatis, expedita dolore velit aspernatur quam dignissimos obcaecati. Iure deleniti corporis impedit alias beatae error nemo, tempore exercitationem voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis maiores perspiciatis, expedita dolore velit aspernatur quam dignissimos obcaecati. Iure deleniti corporis impedit alias beatae error nemo, tempore exercitationem voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis maiores perspiciatis, expedita dolore velit aspernatur quam dignissimos obcaecati. Iure deleniti corporis impedit alias beatae error nemo, tempore exercitationem voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis maiores perspiciatis, expedita dolore velit aspernatur quam dignissimos obcaecati. Iure deleniti corporis impedit alias beatae error nemo, tempore exercitationem voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis maiores perspiciatis, expedita dolore velit aspernatur quam dignissimos obcaecati. Iure deleniti corporis impedit alias beatae error nemo, tempore exercitationem voluptatum.</p>
 </div>
 
 </body>
