@@ -11,21 +11,44 @@
 
 </head>
 <body>
-   <!-- first side -->
+   <!-- first side --> 
     <div class=" flex bg-gradient-to-r from-black via-grey-900 to-yellow-900 w-full h-screen  ">
            <img src="./meMySelfAndI2.jpg" alt="" class="h-92 flex justify-end  mix-blend-lighten">
         <div class="mt-20">  
-           <h1 id="Hello" onmouseover="infoAboutMe()" onmouseout="showeAgain()" class="text-9xl font-black text-white p-5"> Hello </h1>
-            <h1 id="aboutMe" onmouseover="aboutMe()"  class="hidden text-4xl font-black text-white"> About Me </h1>
+            <!-- hover: changes to About me and send you down the side -->
+            <h1 id="Hello" onmouseover="hideHello()" onmouseout="showeHello()" class="text-8xl font-black text-white p-10"> Hello </h1>
+            <h1 id="aboutMe" onmouseover="showAboutMe()"  class="hidden text-8xl font-black text-white p-10"> <a href="#moreOfMe"> About me</a></h1>
             
-            <h2 id="thisIs" class="text-8xl font-bold text-red-800 mt-10 transform hover:hidden ">This is</h2>
-            <h2 id="Previus" class=" hidden text-8xl font-bold text-red-800 mt-10"></h2>
-             
-           <h2 class="text-7xl font-bold text-red-800 mt-7">Max</h2>
-           <h3 class="text-4xl font-mono mt-5 text-red-800"> Front End Devoloper</h3>
-        </div> 
+            <!-- hover: This is change to Experiens and send you   -->
+            <h2 id="thisIs" onmouseover="hideThisIs()" onmouseout="showThisIs()" class="text-8xl font-bold text-red-800 mt-10 transform hover:hidden">This is</h2>
+            <h2 id="workHistori" onmouseover="showWorkHistori()" class=" hidden text-8xl font-bold text-red-800 mt-10"> <a href="#Experience">Experience</a></h2>
+             <!-- hover: Max change to Contact ,click and you will come down -->
+           <h2 id="myName" onmouseover="hideName()" onmouseout="showName()" class="text-7xl font-bold text-red-800 mt-7">Max</h2>
+           <h2 id="myContact" onmouseover="showeContact()" class=" hidden text-7xl font-bold text-red-800 mt-7"> <a href="#contact">Contact</a> </h2>
 
+           <h2 id="frontEnd" onmouseover="FontEnd()" onmouseout="devoloper()" class="text-4xl font-mono mt-5 text-red-800"> Front End Devoloper</h2>
+           <h2 id="portfolio" onmouseover="showePortfolio()" class=" hidden text-4xl font-mono mt-5 text-red-800"> Portfolio</h2>
            
+        </div> 
     </div>
+    <div class="bg-blue-400" id="moreOfMe">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi quisquam, earum tenetur nihil facilis ex maiores quasi fugiat cumque esse optio necessitatibus! Aliquid dicta ut blanditiis quaerat non voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi quisquam, earum tenetur nihil facilis ex maiores quasi fugiat cumque esse optio necessitatibus! Aliquid dicta ut blanditiis quaerat non voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi quisquam, earum tenetur nihil facilis ex maiores quasi fugiat cumque esse optio necessitatibus! Aliquid dicta ut blanditiis quaerat non voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi quisquam, earum tenetur nihil facilis ex maiores quasi fugiat cumque esse optio necessitatibus! Aliquid dicta ut blanditiis quaerat non voluptatibus.</p>
+    </div>
+<div id="Experience">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt fuga quos dignissimos quaerat molestiae. Praesentium adipisci earum incidunt, ullam sint voluptatibus voluptates pariatur aut explicabo voluptatem porro, voluptatum maxime.</p>
+</div>
+
+<div id="contact">
+
+</div>
+
 </body>
 </html>
