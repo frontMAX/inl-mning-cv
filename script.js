@@ -21,6 +21,7 @@ let navMenu;
 let myLinks;
 /** start of the program */
 function main(){
+    
  Hello = document.getElementById('Hello');
  about = document.getElementById('aboutMe');
  thisIs = document.getElementById('thisIs');
@@ -74,10 +75,9 @@ function devoloper (){
 }
 /** dropMenu */
 function menuDown (){
-    if (navMenu.style.display === "block"){
+      if (navMenu.style.display === "block") {
         navMenu.style.display = "none";
     } else {
         myLinks.style.display = "block";
     }
 }
-
