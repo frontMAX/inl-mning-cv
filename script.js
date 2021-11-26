@@ -73,11 +73,11 @@ function devoloper (){
     frontEnd.style.display = 'block'
     portfolio.style.display = 'none'
 }
-/** dropMenu */
-function menuDown (){
-      if (navMenu.style.display === "block") {
-        navMenu.style.display = "none";
-    } else {
-        myLinks.style.display = "block";
-    }
-}
+// /** dropMenu */
+// function menuDown (){
+//       if (navMenu.classlist.toggle === "block") {
+//     } else {
+//         navMenu.style.display = "none";
+//         myLinks.style.display = "block";
+//     }
+// }
