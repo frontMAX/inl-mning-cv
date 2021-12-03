@@ -11,9 +11,9 @@ let work;
 let myName;
 /** @type {HTMLElement} */
 let  contact;
-/** @type {HTMLElement} */
+/** @type {HTMLElement}  */
 let frontEnd;
-/** @type {HTMLElement} */
+/** @type {HTMLElement} portfolio page*/
 let portfolio;
 /** burgerMenu @type {HTMLElement} */
 let navMenu;
@@ -73,11 +73,16 @@ function devoloper (){
     frontEnd.style.display = 'block'
     portfolio.style.display = 'none'
 }
-// /** dropMenu */
-// function menuDown (){
-//       if (navMenu.classlist.toggle === "block") {
-//     } else {
-//         navMenu.style.display = "none";
-//         myLinks.style.display = "block";
-//     }
-// }
+/** dropMenu */
+function menuDown (){
+   navMenu.style.display = 'block'
+    navMenu.style.display = 'none'
+    myLinks.style.display = 'block'
+}
+
+function menuUpp (){
+    myLinks.style.display = 'block'
+    myLinks.style.display = 'none'
+    navMenu.style.display = 'block'
+}
+
