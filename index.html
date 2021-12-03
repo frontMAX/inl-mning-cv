@@ -14,83 +14,84 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
+<!-- background color-->
 <body class="bg-gradient-to-r from-black via-black to-red-500">
      <!-- mobile burgermeny-->
-    <div id="navMenu" class="lg:hidden flex space-x-11">
-        <span onclick="menuDown()" class="material-icons ml-5 flex text-white">menu</span>
-        <h2 class="text-white  md:hidden">Max Andersson front end utveckling </h2>
-    </div>
-     <div id="myLinks" class="hidden h-screen w-full bg-black" >
-        <span onclick="menuUpp()" class="material-icons ml-5 text-white">menu</span>
-        <nav class=" text-white flex justify-center text-5xl">
-            <ul>
-                <li class="pt-5"><a href="#moreOfMe">About me</a></li>
-                <li class="pt-5"><a href="#Experience">Experience</a></li>
-                <li class="pt-5"><a href="#contact">Contact</a></li>
-                <li class="pt-5"><a href="#showPortfolio">Portfolio</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    <!-- img and background--> 
-    <div class="flex w-full h-screen">
-     <div class="flex items-center w-1/2 self-center"> 
-        <img src="./meMySelfAndI2.jpg" alt="" class="  sm:flex justify-center items-center md:flex justify-end mix-blend-lighten rounded-full h-80 block mx-auto">
- 
-    </div>
-    <!--text that is coming in smaller screens-->
-        <div class="hidden md:block lg:hidden text-6xl font-black text-white align-center mt-10">
-           <h2 class="mt-10">Max Andersson</h2>
-           <h2 class="mt-10">Front end devoloper</h2>
-     </div>
-        <!-- hover: changes to About me and send you down the side -->
-     <div class="hidden lg:block flex justify-end h-screen w-1/2 ">  
-    <div id="Hello" onmouseover="hideHello()" onmouseout="showeHello()" >       
-        <h1  class="text-9xl font-black text-blue-800 p-10"> Hello </h1>
-    </div>
-    <div id="aboutMe"  class="hidden p-10" >  
-        <h1   class="text-8xl font-black text-blue-800"> <a href="#moreOfMe" class="cursor-pointer"> About me</a></h1>
+     <div  class="menu-btn lg:hidden flex ml-20 " id="menu-btn">
+        <div class="menu-btn_burger mt-10 "> </div>
+        <div   id="navbar" class="hidden text-white flex bg-black justify-center text-2xl ">    
+            <nav class="mt-64 ml-10">    
+                <ul class="p-5">
+                    <li class="pt-5"><a href="#moreOfMe">About me</a></li>
+                    <li class="pt-5"><a href="#Experience">Experience</a></li>
+                    <li class="pt-5"><a href="#contact">Contact</a></li>
+                    <li class="pt-5"><a href="#showPortfolio">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
     </div> 
+     
+     
+     
+<!-- img and background--> 
+    <div class="flex w-full h-screen">
+      <div class=" mx-auto lg:flex items-center w-1/2 self-center"> 
+          <img src="./meMySelfAndI2.jpg" alt="" class="h-64 flex mix-blend-lighten rounded-full md:h-80 block mx-auto">
+          <!--text that is coming in smaller screens-->
+          <div class="text-3xl text-white md:block  md:text-6xl font-black text-white align-center mt-10 lg:hidden">
+               <h2 class="mt-10">Max Andersson</h2>
+               <h2 class="mt-5">Front end devoloper</h2>
+          </div>
+ 
+      </div>
+        <!-- hover: changes to About me and send you down the side -->
+     <div class="hidden lg:block flex justify-end h-screen w-1/2 p-10">  
+      <div id="Hello" onmouseover="hideHello()" onmouseout="showeHello()" >       
+        <h1  class="text-9xl font-black text-blue-800 p-10"> Hello </h1>
+      </div>
+      <div id="aboutMe"  class="hidden" >  
+        <h1   class="text-8xl font-black text-blue-800"> <a href="#moreOfMe" class="cursor-pointer"> About me</a></h1>
+      </div> 
         <!-- hover: This is change to Experiens and send you   -->
-        <div id="thisIs" onmouseover="hideThisIs()" onmouseout="showThisIs()">
+      <div id="thisIs" onmouseover="hideThisIs()" onmouseout="showThisIs()">
             <h2 class="text-9xl font-bold text-white mt-10 transform">This is</h2>
-        </div> 
-        <div id="workHistori"  class="hidden">
+      </div> 
+      <div id="workHistori"  class="hidden">
             <h2 class=" text-8xl font-bold text-red-500 mt-10"> <a href="#Experience">Experience</a></h2>
-        </div>
+      </div>
             <!-- hover: Max change to Contact ,click and you will come down -->
-        <div id="myName" onmouseover="hideName()" onmouseout="showName()">
+      <div id="myName" onmouseover="hideName()" onmouseout="showName()">
             <h2  class="text-7xl font-bold text-white mt-7">Max</h2>
-        </div>
-        <div id="myContact" class="hidden">
+      </div>
+      <div id="myContact" class="hidden">
             <h2  class="text-7xl font-bold text-red-500 mt-7"> <a href="#contact">Contact</a> </h2>
-        </div>
+      </div>
            <!-- hover: front end devoloper to portfolie-->
-        <div id="frontEnd" onmouseover="FontEnd()" onmouseout="devoloper()">
+      <div id="frontEnd" onmouseover="FontEnd()" onmouseout="devoloper()">
            <h2  class="text-4xl text-white mt-5 "> Front End Devoloper</h2>
-        </div>
-        <div id="portfolio" class="hidden">
+      </div>
+      <div id="portfolio" class="hidden">
            <h2 class=" h-screen w-full text-ba font-mono mt-5 text-red-500 text-5xl"><a href="#showPortfolio">Portfolio</a></h2>
-        </div> 
-        </div> 
+      </div> 
+     </div> 
     </div>
     <!-- the page white information about me-->
     <div class=" flex justify-end w-full md:w-full md:h-screen " id="moreOfMe">
-       <div class="md:h-screen w-full flex justify-center items-center">
+      <div class="md:h-screen w-full flex justify-center items-center">
         <img src="./IMG_2896.jpg" alt="En bild på mig" class="hidden lg:block rounded-full h-64 ">
-       </div>
-        <div class="flex flex-col justify-center max-w-xl">
+      </div>
+      <div class="flex flex-col justify-center max-w-xl">
           <h2 class=" flex justify-center text-white font-bold text-6xl mb-5">About me</h2>
                <p class=" flex justify-center text-white text-2xl mt-5 mr-10">
             En livlig och glad kille som är bosatt i Göteborg sedan 2016. 
              Född och uppvuxen i Karlskoga som är en mindre stad belägen på gränsen till Värmland.
              
-             För ett tag som kom ett nytt intesse till mitt liv som är kodning, utöver studierna som 
+             För ett tag sen så kom ett nytt intesse till mitt liv det är kodning, utöver studierna som 
              front end utvecklare är två brinnande intressen, skidåkning och vågsurfing.
              Mina intressen har lett mig till många roliga platser i världen ihop med min sambo
              och kompisar, varma stränder och snöiga berg. 
         </p>    
-    </div>
+      </div>
     </div>
     
         
@@ -132,7 +133,7 @@
             <span class="material-icons text-white pl-3 pr-3"> email </span>
             <p class="text-white">max.andersson@medieinstitutet.se</p> 
         </div>
-        <!-- <p class=" text-white">Github</p>          -->
+        <!-- <p class=" text-white">Github</p>-->
      </div>
     </div>
 
