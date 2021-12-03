@@ -14,68 +14,77 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gradient-to-r from-black via-black to-red-500">
      <!-- mobile burgermeny-->
-    <div id="navMenu" class="lg:hidden">
-        <span onclick="menuDown()" class=" material-icons md-24">menu</span>
+    <div id="navMenu" class="lg:hidden flex space-x-11">
+        <span onclick="menuDown()" class="material-icons ml-5 flex text-white">menu</span>
+        <h2 class="text-white  md:hidden">Max Andersson front end utveckling </h2>
     </div>
-    <div id="myLinks" class=" hidden h-screen w-full bg-green-300">
-        <nav>
+     <div id="myLinks" class="hidden h-screen w-full bg-black" >
+        <span onclick="menuUpp()" class="material-icons ml-5 text-white">menu</span>
+        <nav class=" text-white flex justify-center text-5xl">
             <ul>
-                <li><a href="#moreOfMe">About me</a></li>
-                <li><a href="#Experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#showPortfolio">Portfolio</a></li>
+                <li class="pt-5"><a href="#moreOfMe">About me</a></li>
+                <li class="pt-5"><a href="#Experience">Experience</a></li>
+                <li class="pt-5"><a href="#contact">Contact</a></li>
+                <li class="pt-5"><a href="#showPortfolio">Portfolio</a></li>
             </ul>
         </nav>
     </div>
+    
     <!-- img and background--> 
-    <div id="Home" class="flex bg-gradient-to-r from-black via-red-900 to-red-500 w-full h-screen  ">
-          <img src="./meMySelfAndI2.jpg" alt="" class="h-92 flex justify-end  mix-blend-lighten">
-    <div>
-           <h2 class=" hidden md:block lg:hidden text-6xl font-black align-center mt-10">Max Andersson</h2>
-           <h2 class=" hidden md:block lg:hidden text-6xl font-black align-center mt-10">Front end devoloper</h2>
+    <div class="flex w-full h-screen">
+     <div class="flex items-center w-1/2 self-center"> 
+        <img src="./meMySelfAndI2.jpg" alt="" class="  sm:flex justify-center items-center md:flex justify-end mix-blend-lighten rounded-full h-80 block mx-auto">
+ 
+    </div>
+    <!--text that is coming in smaller screens-->
+        <div class="hidden md:block lg:hidden text-6xl font-black text-white align-center mt-10">
+           <h2 class="mt-10">Max Andersson</h2>
+           <h2 class="mt-10">Front end devoloper</h2>
      </div>
         <!-- hover: changes to About me and send you down the side -->
-     <div class="hidden lg:block  mt-20">  
-    <div id="Hello" onmouseover="hideHello()" onmouseout="showeHello()">       
-        <h1  class="text-9xl font-black text-white p-10"> Hello </h1>
+     <div class="hidden lg:block flex justify-end h-screen w-1/2 ">  
+    <div id="Hello" onmouseover="hideHello()" onmouseout="showeHello()" >       
+        <h1  class="text-9xl font-black text-blue-800 p-10"> Hello </h1>
     </div>
-    <div id="aboutMe"  class="hidden" >  
-        <h1   class="text-9xl font-black text-white p-10 "> <a href="#moreOfMe" class="cursor-pointer"> About me</a></h1>
+    <div id="aboutMe"  class="hidden p-10" >  
+        <h1   class="text-8xl font-black text-blue-800"> <a href="#moreOfMe" class="cursor-pointer"> About me</a></h1>
     </div> 
         <!-- hover: This is change to Experiens and send you   -->
         <div id="thisIs" onmouseover="hideThisIs()" onmouseout="showThisIs()">
-            <h2 class="text-9xl font-bold  mt-10 transform">This is</h2>
+            <h2 class="text-9xl font-bold text-white mt-10 transform">This is</h2>
         </div> 
         <div id="workHistori"  class="hidden">
             <h2 class=" text-8xl font-bold text-red-500 mt-10"> <a href="#Experience">Experience</a></h2>
         </div>
             <!-- hover: Max change to Contact ,click and you will come down -->
         <div id="myName" onmouseover="hideName()" onmouseout="showName()">
-            <h2  class="text-7xl font-bold  mt-7">Max</h2>
+            <h2  class="text-7xl font-bold text-white mt-7">Max</h2>
         </div>
         <div id="myContact" class="hidden">
             <h2  class="text-7xl font-bold text-red-500 mt-7"> <a href="#contact">Contact</a> </h2>
         </div>
            <!-- hover: front end devoloper to portfolie-->
         <div id="frontEnd" onmouseover="FontEnd()" onmouseout="devoloper()">
-           <h2  class="text-4xl font-mono mt-5 "> Front End Devoloper</h2>
+           <h2  class="text-4xl text-white mt-5 "> Front End Devoloper</h2>
         </div>
         <div id="portfolio" class="hidden">
-           <h2 class=" h-screen w-full text-4xl font-mono mt-5 text-red-500"><a href="#showPortfolio">Portfolio</a></h2>
+           <h2 class=" h-screen w-full text-ba font-mono mt-5 text-red-500 text-5xl"><a href="#showPortfolio">Portfolio</a></h2>
         </div> 
         </div> 
     </div>
     <!-- the page white information about me-->
-    <div class="flex justify-center w-full bg-black md:w-full md:h-screen" id="moreOfMe">
-        <div class="flex flex-col justify-center ">
-          <h2 class=" flex justify-center font-bold text-white text-7xl text-red-600">About me</h2>
-             <p class="text-5xl text-blue-200 justify-center flex">Lite snabbt om mig</p>     
-        <p class=" flex justify-center text-white text-2xl mt-5 mr-10 ml-10">
+    <div class=" flex justify-end w-full md:w-full md:h-screen " id="moreOfMe">
+       <div class="md:h-screen w-full flex justify-center items-center">
+        <img src="./IMG_2896.jpg" alt="En bild på mig" class="hidden lg:block rounded-full h-64 ">
+       </div>
+        <div class="flex flex-col justify-center max-w-xl">
+          <h2 class=" flex justify-center text-white font-bold text-6xl mb-5">About me</h2>
+               <p class=" flex justify-center text-white text-2xl mt-5 mr-10">
             En livlig och glad kille som är bosatt i Göteborg sedan 2016. 
              Född och uppvuxen i Karlskoga som är en mindre stad belägen på gränsen till Värmland.
-             Oavsett vad jag konstuerar strävar jag efter perfektion.
+             
              För ett tag som kom ett nytt intesse till mitt liv som är kodning, utöver studierna som 
              front end utvecklare är två brinnande intressen, skidåkning och vågsurfing.
              Mina intressen har lett mig till många roliga platser i världen ihop med min sambo
@@ -88,48 +97,50 @@
         
 
     <!-- the page white information about my experience -->
-    <div class="bg-black flex flex-col" id="Experience">   
-        <div class="justify-center ">
-            <h1 class="text-7xl text-red-600 font-bold justify-center flex mt-10">Experience</h1>
-            <p class="text-6xl text-blue-200 flex justify-center">Kort om mitt arbetsliv</p>
-            <p class="text-white flex justify-center text-2xl pt-9">Byggbranchen är där jag gjort mina flesta år efter skolan</p>
-            <p class="text-white flex justify-center text-2xl pt-4"> Men jag har även hunnit med hotell och butiks jobb under dessa år</p>
-            <p class="text-white flex justify-center text-2xl pt-4">Erfarenhet inom front end utveckling kommer in kort</p>
+    <div class="flex flex-col pb-10" id="Experience">   
+        <div class=" flex max-w-md flex-col mx-auto text-white">
+            <h2 class=" text-6xl font-bold justify-center flex mt-10 mb-5">Experience</h2>
+            <p class=" flex justify-center text-2xl pt-9 ml-10 mr-10 ">Byggbranchen är där jag gjort mina flesta år efter skolan,områdena jag har arbetat i är byggnadsplåtslagare och anläggare</p>
+            <p class=" flex justify-center text-2xl pt-4 ml-10 mr-10"> Jag har även jobbar inom hotell och bar i österrike då jag bodde där under en vinter och jobbat i sportbutik.</p>
+            <p class=" flex justify-center text-2xl pt-4 ml-10 mr-10">Erfarenhet inom front end utveckling kommer in kort</p>
         </div>
     </div>
 
     
     
     <!-- contact side of me-->
-    <div class="flex flex-col bg-black" id="contact">
-        <h2 class="flex justify-center text-red-600 text-8xl mt-5">Contact</h2>
-        <p class="flex justify-center text-white text-2xl mt-10 text-blue-200">Kontakt information</p>
-        <div class="flex mt-5"> 
-            <span class="material-icons text-white"> face </span>
-            <p class="text-red-400">Max Andersson</p>
+    <div class="flex flex-col pb-10" id="contact">
+        <h2 class="flex justify-center font-bold text-white text-6xl mt-5">Contact</h2>
+        <div class="md:grid grid-cols-3 gap-4 pt-5 md:pl-10">
+        <div class="flex pt-5"> 
+            <span class="material-icons text-white pl-3 pr-3"> face </span>
+            <p class="text-white text-lg">Max Andersson</p>
         </div>
-        <div class="flex"> 
-            <span class="material-icons text-white">location_city</span>
-            <p class="text-red-400">Göteborg</p>    
+        <div class="flex pt-5"> 
+            <span class="material-icons text-white pl-3 pr-3">location_city</span>
+            <p class="text-white text-lg ">Göteborg</p>    
         </div>
-        <div class="flex"> 
-            <span class="material-icons text-white"> house </span>
-            <p class="text-red-400">Uggleberget 24</p>
+        <div class="flex pt-5"> 
+            <span class="material-icons text-white pr-3 pl-3"> house </span>
+            <p class="text-white">Uggleberget 24</p>
         </div>
-        <div class="flex"> 
-            <span class="material-icons text-white"> phone </span>
-            <p class="text-red-400"> 073 9253828</p>
+        <div class="flex pt-5"> 
+            <span class="material-icons text-white pl-3 pr-3"> phone </span>
+            <p class="text-white"> 073 9253828</p>
         </div>
-        <div class="flex"> 
-            <span class="material-icons text-white"> email </span>
-            <p class="text-red-400">max.andersson@medieinstitutet.se</p> 
+        <div class="flex pt-5"> 
+            <span class="material-icons text-white pl-3 pr-3"> email </span>
+            <p class="text-white">max.andersson@medieinstitutet.se</p> 
         </div>
-        <p>Github</p>         
-        
+        <!-- <p class=" text-white">Github</p>          -->
+     </div>
     </div>
+
+  
+
     <!-- portfolio my projects i have done-->
-    <div id="showPortfolio" class=" flex flex-col justify-center bg-black">
-        <h1 class=" text-9xl text-red-600 flex justify-center">Portfolio</h1>
+    <div id="showPortfolio" class=" flex flex-col justify-center pt-10 pb-10">
+        <h1 class=" text-7xl text-white font-bold flex justify-center">Portfolio</h1>
         <p class=" flex justify-center text-white text-2xl mt-20">Innehållet kommer inom en snar framtid</p>
     </div>
     
